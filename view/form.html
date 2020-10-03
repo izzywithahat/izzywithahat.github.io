@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>About Me</title>
+            <!-- Bootstrap core CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <link href="../HW_1/css/mypage.css" rel="stylesheet">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img class="rounded-circle" src="C://Users/izzyr/OneDrive - UCB-O365/CSCI 3308 - SoftDev/HW_1/img/firelily.jpg" style="width:40px;">
+                </a>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="https://github.com/izzywithahat/Labs_3308">
+                    <img class="rounded-circle" src="C://Users/izzyr/OneDrive - UCB-O365/CSCI 3308 - SoftDev/HW_1/img/github.png" style="width:40px;">
+                </a>
+            </nav>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <h2>Add New Interest</h2>
+                </div>
+                <form action="mypage_bootstrap.html" method="get">
+                    <div class="form-group">
+                        <label for="input_id"><b>Name of new Interest</b></label>
+                        <label class="sr-only" for="newInterest">New Interest</label>
+                        <input type="text" class="form-control" id="newInterest" placeholder="New Interest">
+                    </div>
+                    <div class="form-group">
+                        <label for="input_id"><b>Desrciption</b></label>
+                        <label class="sr-only" for="description">Description</label>
+                        <input type="text" style="height:250px" class="form-control" id="description">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <p>Upload image:</p>
+                            <input type="file" id="photo" name="fileName">
+                        </div>
+                        <div class="form-group col-6">
+                            <p>Select # of Tweets to Display:<br></p>
+                            <select class="form-control name="select_choice" id="choice">
+                                <option selected>Select a Number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="radio">
+                        <p><b>How interested are you on a scale from 1 to 5?</b><br>
+                        5 being very interested and 1 being not very interested.
+                        </p>
+                        <label class="radio-inline"><input type="radio" name="choice" value="none"> 1 </label>
+                        <label class="radio-inline"><input type="radio" name="choice" value="none"> 2 </label>
+                        <label class="radio-inline"><input type="radio" name="choice" value="none"> 3 </label>
+                        <label class="radio-inline"><input type="radio" name="choice" value="none"> 4 </label>
+                        <label class="radio-inline"><input type="radio" name="choice" value="none"> 5 </label>
+                    </div>
+                    <p>Login to finish Submitting</p>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label class="sr-only" for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group col">
+                            <label class="sr-only" for="password">Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </body>
+    </html>
